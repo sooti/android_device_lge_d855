@@ -1,12 +1,13 @@
+# Inherit Omni GSM telephony parts
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit Omni product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit device configuration
 $(call inherit-product, device/lge/d855/full_d855.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
-PRODUCT_NAME := cm_d855
+PRODUCT_NAME := omni_d855
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="g3" \

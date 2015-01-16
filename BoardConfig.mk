@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
 # inherit from common g3
 -include device/lge/g3-common/BoardConfigCommon.mk
@@ -25,7 +23,7 @@ BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d855/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_d855_defconfig
+TARGET_KERNEL_CONFIG := omni_d855_defconfig
 TARGET_REQUIRES_BUMP := true
 
 # Partitions
