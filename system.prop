@@ -7,3 +7,6 @@ ro.telephony.call_ring.multiple=0
 ro.telephony.default_network=9
 telephony.lteOnCdmaDevice=0
 telephony.lteOnGsmDevice=1
+# ENABLE MULTI-USER ON ANDROID
+fw.show_multiuserui=1
+fw.max_users=5
