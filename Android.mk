@@ -25,8 +25,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter d855,$(TARGET_DEVICE)),)
-include $(call all-makefiles-under,$(LOCAL_PATH))
+ifeq ($(TARGET_DEVICE),d855)
+include $(call first-makefiles-under,$(LOCAL_PATH))
 
 WCNSS_IMAGES := \
     wcnss.b00 wcnss.b01 wcnss.b02 wcnss.b04 wcnss.b06 \
